@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // cors initialized
+app.use(cors());
 
 const courses = require('./Data/Courses.json');
 
